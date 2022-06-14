@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+body {
+  color:white;
+	background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('images/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height:100vh;
+  font-family: 'Outfit', sans-serif;
+	align-items:center;
+	text-align:center;
+}
+
+progress {
+   accent-color: #dfffdf;
+}
+
+img {
+	height:400px;
+	width:auto;
+	border-radius:20px;
+	border: solid thick rgba(0,0,0,0.2);
+}
+
+button {
+	border:none;
+	cursor:pointer;
+	padding:13px;
+	border-radius:12px;
+	font-weight:bold;
+	transition:0.5s;
+  background-color:white;
+  margin-top:10px !important;
+}
+
+#button:active {
+  background-color:white;
+}
+
+#button:hover {
+	background-color:#999999;
+	color:white;
+}
+
+#activity,
+#activity1,
+#activity2 {
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	font-size:15px;
+}
+ .clr {
+	 
+ }
+ 
+ #lightbox {
+	 /* display: none; */
+	position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.8); 
+ 
+ }
+ 
+ #message {
+  color: white;
+   padding-top:40px;
+     padding-bottom:40px;
+  padding-left: 16%;
+  padding-right: 16%;
+  background-color: black;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	border-radius:50px;
+ }
+ 
+ #z {
+   margin:7%;
+	 z-index:2;
+	 background:rgba(167, 235, 164,0.99);
+	 border-radius:50px;
+	 height:100%;
+	 padding:55px;
+   box-shadow: 1px 1px 15px #111111;
+ }
+
+#t4 {
+  font-size:18px;
+  font-weight:bold;
+}
+
+#t5 {
+  font-size:18px;
+  font-weight:bold;
+}
+
+.hr1 {
+ border: 2px solid white;
+  border-radius: 5px;
+}
+
+@media (max-width:850px) {
+  
+  img {
+    height:auto;
+    width:100%;
+  }
+
+}

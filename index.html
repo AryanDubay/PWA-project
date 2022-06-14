@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Zoo Animals</title>
+
+    <!-- include an external style sheet -->
+    <meta name="description" content="You are given 30 seconds to anser two questions about zoo animals.">
+    <link rel="apple-touch-icon" href="/icon/appleicon-512x512.png">
+    <meta name="theme-color" content="#FFFFFF"/>
+    <meta name="viewport" content="width=device-width">
+    <link rel="manifest" href="manifest.json"> 
+    <link rel="stylesheet" href="style.css">  
+     <link rel="icon" type="image/x-icon" href="images/favico.ico">
+    <!-- include an external JavaScript file -->
+    <script src="apiexample.js"></script>
+  </head>
+  <!-- 
+  https://list.ly/api/docs#list-retrieve-a-list
+  https://list.ly/api/v4/lists/search?q=dog&page=1&per_page=1/items -->
+  <body>
+ 
+
+<div id="z">
+     <br>
+     <br>
+     <h1>Zoo Animals</h1>
+    <p>Time:</p>
+    <progress id="count" value="30" max="30"></progress>
+    <div id="scorebox">score:0</div>
+     <button id="visit">Visit Next Animal</button>
+  <hr class="hr1">
+
+         <div id="animal" ></div><br><br>
+
+    <div id="t4">What type of Animal is this?</div>
+    <button id="mammal" value="Mammal" class="clr">Mammal</button>
+    <button id="bird" value="Bird" class="clr">Bird</button>
+    <button id="reptile" value="Reptile" class="clr">Reptile</button>
+    <button id="frog" value="Amphibian" class="clr">Amphibian</button>
+    <button id="fish" value="Fish" class="clr">Fish</button>
+    <br>
+    <br>
+    <div id="t5">What is it's active time?</div>
+      <button id="day" value="Diurnal" class="clr">Diurnal(Day)</button>
+    <button id="night" value="Nocturnal" class="clr">Nocturnal(Night)</button>
+    <button id="dusk" value="Crepuscular" class="clr">Crepuscular(Dusk to Dawn)</button>
+  
+    <br>
+  <hr class="hr1">
+      <button id="visit2">Visit Next Animal</button>
+    
+    </div>
+  <div id="lightbox">
+     <div id="message" onclick="restart()">Loading...</div>
+</div>
+    by Aryan
+  </body>
+  
+</html>
